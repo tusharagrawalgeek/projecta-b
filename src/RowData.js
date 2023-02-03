@@ -8,7 +8,6 @@ function RowData(props){
     });
     function handleClick(){
         setState({showDetails:!state.showDetails});
-        // console.log(state.showDetails)
     }
     return(
         

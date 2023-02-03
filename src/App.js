@@ -7,7 +7,6 @@ function App(){
   if(state.data===null){
   axios.get("https://jsonplaceholder.typicode.com/users")
   .then(res=>{
-    console.log(res.data);
     setState(prev=>{
       return({
         ...prev,
@@ -20,12 +19,10 @@ function App(){
   })
   }
 
-  console.log(state.data);
   if(state.data!==null){
     return(
       <>
       <div className='bg'>
-        {console.log(state.data)}
         {state.data.map(i=>{
             return(
                 <RowData data={i}/>

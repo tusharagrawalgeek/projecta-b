@@ -8,7 +8,6 @@ function Details(props){
         <div className="details-container">
             <h4>Description</h4>
             <p>
-                {/* {console.log(data)} */}
                 {data.company.catchPhrase+" and "+data.company.bs+"."}
             </p>
             <table className="details-table">
